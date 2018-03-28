@@ -55,7 +55,7 @@ axios.delete('/api/user/'+id)
       
     let {users,onReRender} = this.props;
     
-    if(users.length){
+    if( Array.isArray(users) && users.length){
       users = users.map((user) => 
         <Table.Row key={user._id} id={`${user._id}`}>
           <Table.Cell>{user.firstName}</Table.Cell>

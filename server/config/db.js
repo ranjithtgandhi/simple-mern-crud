@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 	mongoose.Promise = global.Promise;
-var connection = mongoose.connect('mongodb://ds257858.mlab.com:57858/simple-mern-crud', function(err) {
+var connection = mongoose.connect('mongodb://localhost/simple-mern-crud', function(err) {
 	    if (err) {
 	        console.log('Not connected to the database: ' + err); 
 	    } else {
